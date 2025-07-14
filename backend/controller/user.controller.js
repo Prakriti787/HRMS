@@ -49,7 +49,7 @@ export const getAllUser = async (req, res) => {
   try {
     const users = await User.find();
     res.status(200).json({
-      message: "user fetch successfully",
+      message: "user fetched successfully",
       users,
     });
   } catch (error) {
